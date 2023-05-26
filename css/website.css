@@ -1,0 +1,578 @@
+@font-face {
+    font-family: "Avenir";
+    src: url('./../fonts/avenir_ff/AvenirLTStd-Book.otf');
+  }
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+body, html {
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+  }
+
+p {
+    margin-bottom: 0;
+}
+.full-width{
+    padding: 0px;
+}
+.BG_dark{
+    /* background:linear-gradient(180deg,#0000002e ,#00000026 ), url(../img/BG-01.jpg); */
+    background: #0e0e0e;
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-position: center 100%;
+    background-size: cover;
+    color: #fff;
+}
+.logo{
+    position: absolute;
+    top: 12%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+.Content{
+    display: block;
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+}
+.Content h1{
+    font-weight: 700;
+    font-size: 80px;
+    text-transform: uppercase;
+    line-height:60px;
+    margin: 15px 20px;
+}
+.Content-pos p{
+   font: 500 18px/28px  'Quicksand', sans-serif;
+    /* margin: 18px 0px; */
+    
+    text-transform: uppercase;
+    margin: 0px;
+}
+.content-pos p:first-child{
+    color: #ffc107;
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    animation-delay: 400ms;
+}
+.content-pos p:last-of-type{
+    color:#3e76f3;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-delay: 1100ms;
+}
+.content-pos{
+    position: absolute;
+    /* height: 55%; */
+    top: 18%;
+    left: 30%;
+    right: 30%;
+    color:#fff
+}
+.content-pos img{
+     filter: invert(1);
+     margin: 10px 0px;
+   animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-delay: 900ms;
+}
+.download-app{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 24px 0px;
+}
+.download-app a.btn{
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow:0px 0px 6px #ffffff30;
+    border :1px solid #f9f9f98f;
+    min-width:200px;
+
+}
+.download-app a.google{
+   background: linear-gradient(45deg, #e63046, #6cd6fd);
+    color: #fff;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-delay: 1600ms;
+}
+.download-app a.app-store{
+    background: linear-gradient(45deg, #3e76f3, #62c2fb);
+    color: #fff;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-delay: 1400ms;
+}
+.download-app a.app-store:hover,.download-app a.google:hover{
+    background: linear-gradient(45deg, #f9f9f9, #f1f1f1);
+    color: #000;
+    box-shadow:0px 4px 12px #ffffff59;
+    transition: 0.4s ease-in-out;
+}
+.full-height{
+    height: 100%;
+
+}
+.contactus{
+    display: block;
+    text-align: center;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 1700ms;
+}
+.contactus a.btn-contact{
+     font-size: 32px;
+    padding: 4px 12px;
+    margin: 0px 0px;
+    border-radius: 4px;
+    
+}
+.contactus a.btn-contact:first-of-type{
+    color: #28a745;
+    
+}
+.contactus a.btn-contact:last-of-type{
+    color: #3e76f3;
+    
+}
+.contactus a.btn-contact:hover{
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+
+.main-div{
+    background-image: url('./../img/background2x.png'); 
+    object-fit: contain;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: center;
+    /* justify-content: center; */
+}
+.GMT24_Logo_container{
+    align-self: flex-start;
+    flex: 0.1;
+}
+.GMT24_Logo{
+    width: 30%;
+    align-self: flex-start;
+    margin-left: 16px;
+    margin-top: 12px;
+}
+.heading{
+    /* background-color: red; */
+    /* flex: 20%; */
+    width: 70%;
+    font-size: 3rem;
+    font-family: 'Avenir';
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 3.94px;
+    line-height: 1.2;
+    flex: 0.2
+    
+}
+.heading p{
+    margin-bottom: 0;
+}
+.download-app-btns{
+    /* flex: 10%; */
+    flex: 0.1
+}
+.play-store-btn{
+    height: 60px;
+}
+.app-users-container{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex: 0.2;
+}
+.total_download_txt_container{
+    color: #B7A559;
+    font-weight: bold;
+    letter-spacing: 2.91px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    /* flex: 20%; */
+}
+.total_download_txt{
+    font-size: 4.5rem;
+    margin-bottom: 0;
+}
+.app_user_txt{
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-top: -24px;
+}
+.revenues-generation{
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+    margin-bottom: 48px;
+    flex: 0.3;
+    /* flex: 30%; */
+
+}
+.revenue_2020{
+    display: flex;
+    justify-content:flex-end;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.revenue_2020_container{
+    width: 80px;
+    height: 80px;
+    border-radius: 60px;
+    border-color: #D6C065;
+    background-color: #D6C06589;
+    border-width: 2px;
+    border-style: solid ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+
+    font-size: 1rem;
+
+}
+.revenue_2021{
+    display: flex;
+    justify-content:flex-end;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 16px;
+
+}
+.revenue_2021_container{
+    width: 95px;
+    height: 95px;
+    border-radius: 80px;
+    border-color: #D6C065;
+    background-color: #D6C06589;
+    border-width: 2px;
+    border-style: solid ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+
+    font-size: 1.1rem;
+
+
+}
+.revenue_2022{
+    display: flex;
+    justify-content:flex-end;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 16px;
+
+}
+.revenue_2022_container{
+    width: 110px;
+    height: 110px;
+    border-radius: 90px;
+    border-color: #D6C065;
+    background-color: #D6C06589;
+    border-width: 2px;
+    border-style: solid ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+
+    font-size: 1.2rem;
+
+
+}
+.revenue_2023{
+    display: flex;
+    justify-content:flex-end;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 16px;
+
+}
+.revenue_2023_container{
+    width: 125px;
+    height: 125px;
+    border-color: #D6C065;
+    background-color: #D6C06589;
+    border-radius: 80px;
+    border-width: 2px;
+    border-style: solid ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+
+    font-size: 1.3rem;
+
+}
+.support{
+    padding-top: 12px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 14%;
+    padding-right: 14%;
+
+    border-top-width: 2px 0 0 0;
+    border-top-color: #D6C065;
+    border-top-style: solid;
+    flex: 0.2
+}
+.support_item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    text-decoration: none;
+    color: #D6C065;
+}
+.support_icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+
+.support_icon_mail{
+    width: 24px;
+    height: 20px;
+    margin-right: 12px;
+}
+
+
+
+@media (max-width:425px){
+    .heading{
+        font-size: 24px;
+        
+    }
+
+}
+
+
+
+@media (max-width:768px){
+    .main-div{
+        justify-content: center;
+    }
+    .heading{
+        font-size: 24px;
+
+    }
+    .total_download_txt{
+        font-size: 2.5rem;
+    }
+    .app_user_txt{
+        font-size: 1rem;
+        margin-top: -16px;
+    }
+    .revenue_2020{
+        display: flex;
+        justify-content:flex-end;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 16px;
+        margin-right: 16px;
+        font-size: 0.7rem;
+    }
+    .revenue_2020_container{
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        border-color: #D6C065;
+        background-color: #D6C06589;
+        border-width: 2px;
+        border-style: solid ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+    
+        font-size: 0.7rem;
+    
+    }
+    .revenue_2021{
+        display: flex;
+        justify-content:flex-end;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 16px;
+        font-size: 0.7rem;
+    
+    }
+    .revenue_2021_container{
+        width: 68px;
+        height: 68px;
+        border-radius: 34px;
+        border-color: #D6C065;
+        background-color: #D6C06589;
+        border-width: 2px;
+        border-style: solid ;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+    
+        font-size: 0.9rem;
+    
+    
+    }
+    .revenue_2022{
+        display: flex;
+        justify-content:flex-end;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 16px;
+        font-size: 0.7rem;
+    
+    }
+    .revenue_2022_container{
+        width: 86px;
+        height: 86px;
+        border-radius: 45px;
+        border-color: #D6C065;
+        background-color: #D6C06589;
+        border-width: 2px;
+        border-style: solid ;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+    
+        font-size: 1rem;
+    
+    
+    }
+    .revenue_2023{
+        display: flex;
+        justify-content:flex-end;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 16px;
+        font-size: 0.7rem;
+    
+    }
+    .revenue_2023_container{
+        width: 104px;
+        height: 104px;
+        border-color: #D6C065;
+        background-color: #D6C06589;
+        border-radius: 80px;
+        border-width: 2px;
+        border-style: solid ;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+    
+        font-size: 1.3rem;
+    
+    }
+    .support{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .support_item_container{
+        font-size: 0.8rem;
+    }
+    .support_item1{
+        width: 40%;
+        align-self: flex-start;
+    }
+    .support_item2{
+        width: 40%;
+        align-self: flex-start;
+        margin-left: -16px;
+
+    }
+    .support_item3{
+        width: 40%;
+        align-self: flex-start;
+
+    }
+    .support_item4{
+        width: 40%;
+        align-self: flex-start;
+        margin-left: 12px;
+    }
+    .support_icon{
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+    }
+    .support_icon_mail{
+        width: 20px;
+        height: 16px;
+        margin-right: 4px;
+
+    }
+    .content-pos {
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    color: #fff;
+    }
+    .download-app{
+        flex-flow: column;
+    }
+    .download-app a.btn{
+        margin: 6px 0;
+        width: 100%;
+    }
+    .Content h1{
+
+        line-height: 70px;
+        margin: 0px 0px;
+        font-size: 50px;
+    }
+    .Social{
+        margin-top: 24px;
+    }
+
+}
